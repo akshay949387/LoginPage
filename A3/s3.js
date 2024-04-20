@@ -1,25 +1,7 @@
 const express=require('express')
 
 const app=express()
-// let port=0
-// function tryPort(app,port)
-// {
-//     for (let i=3000;i<4000;i++)
-//     {
-//         port=i
-//         try{
-//             app.listen(port,()=>console.log(`server is running at port ${port}`))
 
-//         }
-//         catch(EADDRINUSE)
-//         {
-//             continue
-//         }
-//         break
-//     }
-// }
-// tryPort(app,port)
-// }
 let port=4000
 app.listen(port,()=>console.log(`server is running at port ${port}`))
 
@@ -47,7 +29,6 @@ function InvalidPathMiddleware(req,res){
 
 app.use('/user',userApp)
 
-// app.use(InvalidPathMiddleware)
 
 
 

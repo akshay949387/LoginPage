@@ -1,0 +1,22 @@
+GET http://localhost:4000/get-user:1
+
+###
+POST http://localhost:7500/post-user
+Content-Type: {application/json}
+
+{
+    "id":1,
+    "name":"Akshay",
+    "item":"Student"
+}
+
+###
+PUT  http://localhost:7500/put-user
+headers:{
+    Content-type: "application/json"}
+
+{
+    "id":2,
+    "name":"pavan",
+    "item":"Student"
+}
